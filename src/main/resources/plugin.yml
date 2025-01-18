@@ -1,0 +1,25 @@
+name: BetterNotes
+version: '${project.version}'
+main: me.netpex.betternotes.BetterNotes
+api-version: 1.20
+depend: [ Vault ]
+authors: [ Netpex ]
+description: A modern lightweight plugin that allows users to convert money into banknotes
+commands:
+  betternote:
+    description: The main command for betternotes!
+    permission: betternote.use
+    permission-message: You do not have permission to use this command.
+permissions:
+  betternote.withdraw:
+    description: Allows you to withdraw a specified amount from your account.
+    default: false
+  betternote.deposit:
+    description: Allows you to deposit a specified banknote into your account.
+    default: true
+  betternote.info:
+    description: Allows you to see info about specified banknote or your account.
+    default: true
+  betternote.reload:
+      description: Allows you to reload the plugin.
+      default: op

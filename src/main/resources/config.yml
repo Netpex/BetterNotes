@@ -1,0 +1,25 @@
+banknote:
+  currencyPrefix: "$" # Prefixed
+  default:
+    name: "&a&lBank Note"
+    material: PAPER # If customDenominations is enabled this property will be overwritten.
+    modelData: 1 # If customDenominations is enabled this property will be overwritten.
+    lore:
+      - "&7Amount: &e%amount%"
+      - "&7Creator: &b%creator%"
+
+withdraw:
+  maxAmount: 5000
+  minAmount: 100
+  maxNotes: 15
+  customDenominations: false
+  denominations:
+    - 1:
+      modelData: 2
+      material: PAPER
+    - 10:
+      modelData: 3
+      material: PAPER
+    - 100:
+      modelData: 4
+      material: PAPER
